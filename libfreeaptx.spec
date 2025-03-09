@@ -1,13 +1,11 @@
-%global sonamebase 0
-
 Name:           libfreeaptx
-Version:        %{sonamebase}.1.1
-Release:        8%{?dist}
+Version:        0.2.2
+Release:        1%{?dist}
 Summary:        Open Source implementation of Audio Processing Technology codec (aptX)
 
 License:        LGPLv2+
 URL:            https://github.com/iamthehorker/%{name}
-Source0:        %{url}/archive/%{version}.tar.gz
+Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  make
@@ -47,7 +45,7 @@ command-line utilities.
 
 %files
 %license COPYING
-%{_libdir}/%{name}.so.%{sonamebase}
+%{_libdir}/%{name}.so.0
 %{_libdir}/%{name}.so.%{version}
 
 %files devel
@@ -60,6 +58,9 @@ command-line utilities.
 %{_bindir}/freeaptxdec
 
 %changelog
+* Sun Mar 09 2025 Leigh Scott <leigh123linux@gmail.com> - 0.2.2-1
+- Update to 0.2.2
+
 * Tue Jan 28 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.1.1-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 
