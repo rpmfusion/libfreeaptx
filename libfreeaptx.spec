@@ -1,6 +1,6 @@
 Name:           libfreeaptx
 Version:        0.2.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Open Source implementation of Audio Processing Technology codec (aptX)
 
 License:        LGPLv2+
@@ -58,6 +58,9 @@ command-line utilities.
 %{_bindir}/freeaptxdec
 
 %changelog
+* Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.2.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Sun Mar 09 2025 Leigh Scott <leigh123linux@gmail.com> - 0.2.2-1
 - Update to 0.2.2
 
